@@ -1,0 +1,161 @@
+
+body
+{
+    background-color:#3742fa;
+    font-family: 'Roboto', sans-serif;
+}
+h1
+{
+    width: 50%;
+    color: #fff;
+    margin: auto;
+    margin-top: 40px;
+    font-size: 40px;
+    text-align: center;
+    font-family: cursive;
+}
+#main-div
+{
+
+    width: 70%;
+    margin: auto;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    background-color:#fff;
+    padding: 30px 0px;
+    grid-column-gap: 5px;
+    overflow: hidden;
+}
+#info
+{
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    width: 50%;
+    z-index: -1;
+    opacity: 0;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+}
+.info_after
+{
+    animation: info_anim 1s ease-in-out forwards;
+}
+@keyframes info_anim
+{
+    0%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+      opacity: 1;
+    }
+}
+#input-area
+{
+    width: 100%;
+    margin: 0px 10px;
+}
+#input-area input
+{
+    width: 100%;
+    padding: 10px 0px;
+   border: none;
+   font-size: 20px;
+}
+#button-area
+{
+    width: 100%;
+}
+#button-area i
+{
+    width: 100%;
+    position: relative;
+    top: 25px;
+    left: 10px;
+    font-size: 20px;
+    color:  #5352ed;
+}
+#inner-line
+{
+    width: 100%;
+    height: 3px;
+    background-color: #5352ed;
+    padding: 0;
+    margin: 0;
+}
+#other-div
+{
+    width: 70%;
+    margin: auto;
+}
+#progress-bar
+{
+    height: 7px;
+    width: 0;
+    background-color:  #444;
+    margin: 0;
+    padding: 0;
+}
+
+#myspan
+{
+    position: relative;
+    top: 30px;
+    font-size: 30px;
+}
+input:focus
+{
+    outline:0 !important;
+}
+.wobble
+{
+position: relative;
+animation: myanim .5s ease-in-out;
+}
+@keyframes myanim
+{
+    0%
+    {
+     left: 0;
+     right: 0;
+    }
+    25%
+    {
+    left: 30px;
+    right: -30px;
+    } 
+    50%
+    {
+        left: -30px;
+        right: 30px;
+    }
+    75%
+    {
+        left: 30px;
+        right: -30px;
+    }
+    100%
+    {
+    left: 0;
+    right: 0;
+    }
+}
+.after-submit
+{
+    animation: submit-anim 1s ease-in-out forwards;
+}
+@keyframes submit-anim
+{
+     0%
+     {
+    width: 70%;
+     }
+     100%
+     {
+    width: 0;
+     }
+}
