@@ -1,8 +1,8 @@
 
 body
 {
-    background-color:#3742fa;
-    font-family: 'Roboto', sans-serif;
+    background-color:#192A56;
+    font-family: sans-serif;
 }
 h1
 {
@@ -12,14 +12,14 @@ h1
     margin-top: 40px;
     font-size: 40px;
     text-align: center;
-    font-family: cursive;
+   
 }
 #main-div
 {
 
-    width: 70%;
+    width: 50%;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 10rem;
     display: grid;
     grid-template-columns: 80% 20%;
     background-color:#fff;
@@ -89,7 +89,7 @@ h1
 }
 #other-div
 {
-    width: 70%;
+    width: 50%;
     margin: auto;
 }
 #progress-bar
@@ -158,4 +158,39 @@ animation: myanim .5s ease-in-out;
      {
     width: 0;
      }
+}
+
+
+@media(max-width : 900px){
+    h1{
+        width: 100%;
+
+    }
+    #main-div
+    {
+    width: 90%;
+    margin: auto;
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    background-color:#fff;
+    padding: 30px 0px;
+    grid-column-gap: 5px;
+    overflow: hidden;
+   }
+   #other-div  
+    {
+    width: 90%;
+    margin: auto;
+    }
+    #info
+   {
+   
+    width: 90%;
+    z-index: -1;
+    opacity: 0;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+   }
 }
